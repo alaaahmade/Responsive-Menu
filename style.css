@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+    height: 100vh;
+    background-image: url(img/wallhaven-qzz68d_1920x1080.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #009dfa;
+}
+ul.A li{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+ul.A li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+ul.drop{
+    display: none;
+    position: absolute;
+    background-color: #0071b3;
+    padding-top: 0px;
+    top: 49px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+}
+ul.drop li{
+    display: block;
+}
+ul li:hover{
+    background-color: #015281;
+}
+.menu{
+    width: 30px;
+    display: none;
+    cursor: pointer;
+    background-color: #009dfa;
+    border-radius: 5px;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    height: 30px;
+}
+.menu img{
+    width: 30px;
+}
+.arr{
+    position: relative;
+    top: 5px;
+    width: 15px;
+}
+div.text{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 40px;
+    background-color: #0071b3;
+    padding: 15px 50px;
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px white ,3px 3px 8px white,-2px -2px 2px white,-3px -3px 8px white,4px 4px 15px white,-4px -4px 15px white;
+}
+@media screen and (max-width: 775px){
+    .menu{
+        display: block;
+        /* margin: 10px; */
+        
+    }
+    .content{
+        display: none;
+        width: fit-content;
+        margin-top: 30px;
+    }
+    ul.A{
+        background-color: white;
+    }
+    ul.A li{
+        display: block;
+        font-size: 12px;
+        padding: 15px 0;       
+        color: black;
+
+    }
+    ul.A li a{
+        color: black;
+        padding: 0  10px;
+        color: black;
+    }
+    ul.drop{
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    ul.drop li a{
+        color: white;
+    }
+    ul.A li:hover a{
+        color: white;
+    }
+    div.text{
+        font-size: 0.8em;
+        width: 200px;
+        padding: 15px;
+        text-align: center;
+    }
+}
